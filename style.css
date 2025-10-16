@@ -9,7 +9,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 #main-content {
@@ -22,6 +21,8 @@ body {
 
     grid-template-columns: repeat(4, 1fr) 2fr;
     grid-template-rows: repeat(6, 1fr);
+    border: 5px solid black;
+    border-radius: 5%;
 }
 
 #profile-img {
@@ -32,11 +33,25 @@ body {
 img {
     width: 100%;
     height: 100%;
-     filter: grayscale();
+    filter: grayscale();
+    transition: filter 0.5s ease;
+    border: 5px solid black;
+    margin: -5px;
+    border-radius: 5%;
 }
 
 img:hover {
-    filter: grayscale(0%);}
+    filter: grayscale(0%);
+}
+
+#name {
+ opacity: 0;
+}
+
+#name:hover {
+    display: block;
+    position: absolute;
+}
 
 #navigation {
     grid-column: span 1;
@@ -53,6 +68,7 @@ img:hover {
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: center;
 }
 
 #navigation li {
@@ -60,15 +76,21 @@ img:hover {
     align-items: center;
     justify-content: center;
     display: flex;
+    font-family: roboto;
+
+    border: 5px solid black;
+    margin: -2.5px;
+    border-radius: 5%;
 }
 
 #navigation a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: inherit;
+    transition: color 0.5s ease;
 }
 
 #navigation a:hover {
-    color: rgb(173, 13, 221);
+    color: cyan;
 }
 
 #social-media {
@@ -77,11 +99,14 @@ img:hover {
     grid-column: span 4;
     grid-row: span 1;
     justify-content: space-evenly;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .social-media-btn {
-    border: 3px red solid;
+    /* border: 3px red solid; */
+    border: 5px solid black;
+    margin: -2.5px;
+    border-radius: 5%;
     width: 100%;
     height: 100%;
     display: flex;
