@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const nameTag = document.querySelector("#name");
 
         profileImg.addEventListener("mouseenter", () => {
-            nameTag.computedStyleMap.opacity = 1;
+            nameTag.style.opacity = 1;
+        });
+
+        profileImg.addEventListener("mouseleave", () => {
+            nameTag.style.opacity = 0;
         });
 });
