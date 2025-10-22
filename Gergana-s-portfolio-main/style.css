@@ -101,7 +101,7 @@ img:hover {
     align-items: center;
     justify-content: center;
     display: flex;
-    font-family: roboto;
+    font-family: Arial, sans-serif;
     border: 3px solid rgb(46, 46, 46);
     background-color: #000000;
 }

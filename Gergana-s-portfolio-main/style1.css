@@ -19,7 +19,7 @@ body {
     display: grid; 
     grid-template-rows: auto 1fr; 
 	grid-template-columns: repeat(6, 1fr) 2fr;   
-    border: 5px solid black;
+    border: 5px solid rgb(46, 46, 46);
 border-radius: 5%;}
 
 #navigation ul {
@@ -49,9 +49,9 @@ list-style-type: none;
     align-items: center;
     justify-content: center;
     display: flex;
-    font-family: roboto;
+    font-family: Arial, sans-serif;
 
-    border: 5px solid black;
+    border: 3px solid rgb(46, 46, 46);
     margin: -2.5px; 
     border-radius: 0;
     padding: 0;
@@ -107,7 +107,7 @@ filter: grayscale(0%);}
     padding: 40px;
 	
     color: white; 
-    font-family: roboto, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     
     display: flex;
