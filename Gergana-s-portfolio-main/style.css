@@ -2,10 +2,11 @@ html, body {
     padding: 0;
     margin: 0;
     height: 100%;
+    
 }
 
 body {
-    background-color: #171717;
+    background-color: #ac9f9f;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +34,7 @@ body {
     grid-column: span 4;
     grid-row: span 5;
     position: relative;
-    border: 3px solid rgb(46, 46, 46);
+    border: 3px solid #898383;
     border-radius: 5% 0 0 0;
     overflow: hidden;
     border-bottom: none;
@@ -63,9 +64,10 @@ img:hover {
  transition: 0.4s ease;
  background-color: rgba(25, 25, 25, 0.6);
  border-radius: 50px;
- border: 1px solid black;
+ border: 1px solid #898383;
  padding: 0.4em;
  transition: all 0.4s ease;
+ font-family: Arial, sans-serif;;
 }
 
 #profile-img:hover #name{
@@ -102,8 +104,8 @@ img:hover {
     justify-content: center;
     display: flex;
     font-family: Arial, sans-serif;
-    border: 3px solid rgb(46, 46, 46);
-    background-color: #000000;
+    border: 3px solid #898383;
+    background-color: #918989;
 }
 
 #navigation li:first-child {
@@ -116,6 +118,10 @@ img:hover {
     border-top: none;
 }
 
+#navigation li:hover {
+    color: rgb(5, 1, 187);
+}
+
 #navigation a {
     text-decoration: none;
     color: inherit;
@@ -123,7 +129,7 @@ img:hover {
 }
 
 #navigation a:hover {
-    color: cyan;
+    color: rgb(5, 1, 187);
 }
 
 #social-media {
@@ -140,8 +146,14 @@ img:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid rgb(46, 46, 46);
-    background-color: #000000;
+    border: 3px solid #898383;
+    background-color: #918989;
+    transition: color 0.5s ease;
+}
+
+.social-media-btn:hover {
+color: rgb(5, 1, 187);
+transition: color 0.5s ease;
 }
 
 #social-media .social-media-btn:first-child {
