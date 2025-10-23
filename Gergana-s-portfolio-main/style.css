@@ -1,8 +1,7 @@
 html, body {
     padding: 0;
     margin: 0;
-    height: 100%;
-    
+    height: 100%; 
 }
 
 body {
@@ -41,6 +40,11 @@ body {
     border-right: none;
 }
 
+#profile-img:hover #name{
+    top: 85%;
+    color: peachpuff;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -68,11 +72,6 @@ img:hover {
  padding: 0.4em;
  transition: all 0.4s ease;
  font-family: Arial, sans-serif;;
-}
-
-#profile-img:hover #name{
-    top: 85%;
-    color: peachpuff;
 }
 
 #name:hover {
