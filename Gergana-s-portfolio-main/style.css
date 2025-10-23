@@ -23,6 +23,24 @@ body {
     grid-template-rows: repeat(6, 1fr);  
 }
 
+#main-content::before{
+    content: "";
+    width: 50%;
+    height: 40%;
+    background: 
+    radial-gradient(
+        ellipse at center,
+     rgba(248, 168, 111, 0.8),  
+     rgba(248, 168, 111, 0.6),
+     rgba(248, 168, 111, 0.4));
+    border-radius: 50%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(70px);
+}
+
 *,
 *::before,
 *::after {
