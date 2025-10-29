@@ -1,3 +1,8 @@
+:root {
+  --button-bg-color:#ac9f9f;
+  --border-radius: 0.375em;
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -5,7 +10,7 @@ html, body {
 }
 
 body {
-    background-color: #ac9f9f;
+    background-color: var(--button-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,8 +30,8 @@ body {
 
 #main-content::before{
     content: "";
-    width: 32rem;
-    height: 16rem;
+    width: 40rem;
+    height: 20rem;
     background: 
     radial-gradient(
         ellipse at center,
@@ -45,8 +50,8 @@ body {
 #main-content::after{
     content: "";
     opacity: 0%;
-    width: 32rem;
-    height: 16rem;
+    width: 40rem;
+    height: 20rem;
     background: 
     radial-gradient(
         ellipse at center,
