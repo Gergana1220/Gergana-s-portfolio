@@ -1,0 +1,142 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color:#ac9f9f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-content {
+    color: white;
+    height: 100%; 
+    width: 60%;   
+    display: grid; 
+	grid-template-columns: repeat(6, 1fr) 2fr;   
+    border: 3px solid #898383;
+    border-radius: 5%;
+}
+
+#navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+	width: 100%; 
+	justify-content: center;
+}
+
+#navigation {
+	grid-column: 1 / -1; 
+    grid-row: 1;
+    display: flex;
+	flex-direction:column;
+    text-align: center;
+    align-items: center;
+}
+
+#navigation li {
+    flex: 1; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: Arial, sans-serif;
+    border: 3px solid #898383;
+    margin: -2.5px;
+    padding: 0;
+}
+
+#navigation li:first-child {
+    border-left: none;
+    border-right: none;
+}
+
+#navigation li:last-child {
+    border-right: none;
+    border-left: none;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.5s ease;
+}
+
+#navigation a:hover {
+color: rgb(5, 1, 187);
+}
+	
+#blog-content {
+    grid-column: 1 /-1; 
+    grid-row: 1;         
+    height: 100%;
+    padding: 20px;
+    color: white; 
+    font-family: Arial, sans-serif;
+	justify-content: center;
+}
+
+#blog-image-container {
+    grid-column: 1 / -1; 
+    grid-row: 3;      
+    text-align: center; 
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    filter: grayscale();
+    transition: filter 0.5s ease;
+    border: 3px solid #898383;
+    border-radius: 5%;
+    transition: filter 0.5s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+img:hover {
+    filter: grayscale(0%);
+    transition: filter 0.5s ease;
+}
+
+#article-content {
+    grid-column: 1 / -1; 
+    grid-row: 2;        
+    height: 100%;        
+    padding: 40px;
+    color: white; 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    text-align: left;
+}
+
+#article-content h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(5, 1, 187); 
+}
+
+#article-content p {
+    max-width: 800px;
+    margin: 10px auto;
+}
+.return-link a {
+    text-decoration: none; 
+    color: white;
+    transition: color 0.5s ease; 
+}
+
+.return-link a:hover {
+    color: rgb(5, 1, 187);
+}
