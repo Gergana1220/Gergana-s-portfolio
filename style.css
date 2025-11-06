@@ -169,12 +169,14 @@ img:hover {
     animation: fadeIn 0.4s ease forwards;
     animation-delay: 0.3s;
     opacity: 0;
+    z-index: -1;
 }
 
 #navigation li:nth-child(2) {
     opacity: 0;
     animation: fadeIn 0.4s ease forwards;
     animation-delay: 0.35s;
+    z-index: -1;
 }
 
 #navigation li:last-child {
@@ -183,6 +185,7 @@ img:hover {
     opacity: 0;
     animation: fadeIn 0.4s ease forwards;
     animation-delay: 0.4s;
+    z-index: -1;
 }
 
 #navigation li:hover {
@@ -226,6 +229,10 @@ transition: color 0.5s ease;
 #social-media .social-media-btn:first-child {
     border-radius: 0 0 0 var(--border-radius);
     border-right: none;
+    opacity: 0;
+    animation: fadeInVertical 0.4s ease forwards;
+    animation-delay: 0.3s;
+    z-index: -1;
 }
 
 @keyframes bounceOut {
@@ -247,11 +254,22 @@ transition: color 0.5s ease;
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translate(-50%);
+        transform: translateX(-50%);
     }
     to {
         opacity: 1;
-        transform: translate(0%);
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fadeInVertical {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
     }
 }
 
@@ -295,9 +313,24 @@ transition: color 0.5s ease;
 
 #social-media .social-media-btn:nth-of-type(2) {
     border-right: none;
+    opacity: 0;
+    animation: fadeInVertical 0.4s ease forwards;
+    animation-delay: 0.35s;
+    z-index: -1;
+}
+
+#social-media .social-media-btn:nth-of-type(3) {
+    opacity: 0;
+    animation: fadeInVertical 0.4s ease forwards;
+    animation-delay: 0.4s;
+    z-index: -1;
 }
 
 #social-media .social-media-btn:last-child {
     border-left: none;
     border-right: none;
+    opacity: 0;
+    animation: fadeInVertical 0.4s ease forwards;
+    animation-delay: 0.45s;
+    z-index: -1;
 }
