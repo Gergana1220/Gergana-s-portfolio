@@ -1,5 +1,8 @@
 :root {
-  --button-bg-color:#ac9f9f;
+  --button-bg-color:#f8f0e3;
+  --button-bg2-color:#db2a3a;
+  --button-bg3-color:#30432d;
+  --button-bg4-color:#283726;
   --border-radius: 0.400em;
   --blob-width: 32rem;
   --blob-height: 16rem;
@@ -87,7 +90,7 @@ transition: opacity 0.5s ease;
     grid-column: span 4;
     grid-row: span 5;
     position: relative;
-    border: 3px solid #898383;
+    border: 3px var(--button-bg4-color);
     border-radius: var(--border-radius) 0 0 0;
     overflow: hidden;
     border-bottom: none;
@@ -98,7 +101,7 @@ transition: opacity 0.5s ease;
 
 #profile-img:hover #name{
     top: 85%;
-    color: peachpuff;
+    color:var(--button-bg2-color);
 }
 
 img {
@@ -124,7 +127,7 @@ img:hover {
  transition: 0.4s ease;
  background-color: rgba(25, 25, 25, 0.6);
  border-radius: 50px;
- border: 1px solid #898383;
+ border: 1px var(--button-bg3-color);
  padding: 0.4em;
  transition: all 0.4s ease;
  font-family: Arial, sans-serif;;
@@ -160,7 +163,7 @@ img:hover {
     display: flex;
     font-family: Arial, sans-serif;
     border: 3px solid #898383;
-    background-color: #918989;
+    background-color:var(--button-bg3-color);
 }
 
 #navigation li:first-child {
@@ -186,7 +189,7 @@ img:hover {
 }
 
 #navigation li:hover {
-    color: peachpuff;
+    color:var(--button-bg2-color);
 }
 
 #navigation a {
@@ -196,7 +199,7 @@ img:hover {
 }
 
 #navigation a:hover {
-    color: peachpuff;
+    color: var(--button-bg2-color);
 }
 
 #social-media {
@@ -221,12 +224,12 @@ img:hover {
     justify-content: center;
     align-items: center;
     border: 3px solid #898383;
-    background-color: #918989;
+    background-color: var(--button-bg3-color);
     /*transition: color 0.5s ease;*/
 }
 
 .social-media-btn:hover {
-color:peachpuff;
+color:var(--button-bg2-color);
 transition: color 0.5s ease;
 }
 
