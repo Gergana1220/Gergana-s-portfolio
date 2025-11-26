@@ -1,16 +1,16 @@
 :root {
     --bg: #ffffff;
-    --bg-panel: #11121b;
+    --bg-panel: #7ea4ed;
     --bg-muted: #1b1c27;
     --bg-soft: #151623;
-    --text: #f4f4f8;
-    --text-muted: #b1b3c2;
+    --text: #000022;
+    --text-muted: #ffffff;
     --accent: #ff9e66;
     --accent-strong: #f76642;
     --border: rgba(255, 255, 255, 0.08);
     --radius-pill: 999px;
     --radius-card: 28px;
-    --shadow-soft: 0 30px 80px rgba(7, 8, 12, 0.55);
+    --shadow-soft: 0 30px 80px #3f4b7d8c;
 }
 
 html, body {
@@ -20,9 +20,11 @@ html, body {
 }
 
 body {
-    background-color: var(--bg);
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: white;
+    color: var(--text);
+    line-height: 1.6;
 }
 
 header{
@@ -30,16 +32,58 @@ header{
     align-items: center;
     justify-content: space-between;
     gap: 20em;
-    background-color: #283726;
-    border: #898383;
+    background-color: #7ea4ed;
+    border: #4c4f60;
     border-radius: 9999px;
     position: sticky;
     z-index: 10;
     padding: 2em;
     margin: 2em;
-    box-shadow: var(--shadow-soft);
     backdrop-filter: blur(16px);
 }
+
+nav {
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.logo{
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--text);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#primary-btn{
+    display: inline-flex;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: var(--radius-pill);
+    padding: 12px 22px;
+}
+
+#info{
+    background: var(--bg-panel);
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+}
+
+img{
+ height: 5%;
+ width: %;
+}
+
 /*
 #main-content {
     color: white;
