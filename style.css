@@ -80,8 +80,11 @@ a{
 }
 
 img{
- height: 5%;
- width: %;
+ height: 20em;
+ width: 10em;
+ gap: 32px;
+padding: 42px;
+border-radius: var(--radius-card)
 }
 
 /*
