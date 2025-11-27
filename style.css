@@ -37,8 +37,8 @@ header{
     border-radius: 9999px;
     position: sticky;
     z-index: 10;
-    padding: 2em;
-    margin: 2em;
+    padding: 20px;
+    margin: 48px;
     backdrop-filter: blur(16px);
 }
 
@@ -73,10 +73,11 @@ a{
 
 #info{
     background: var(--bg-panel);
-    margin-top: 48px;
+    margin: 48px;
+    padding: 42px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
+    border-radius: var(--radius-card);
 }
 
 img{
@@ -84,7 +85,10 @@ img{
  width: 10em;
  gap: 32px;
 padding: 42px;
-border-radius: var(--radius-card)
+}
+
+#mini-header{
+    font-size: smaller;
 }
 
 
