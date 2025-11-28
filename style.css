@@ -61,7 +61,7 @@ a{
     text-decoration: none;
 }
 
-#primary-btn{
+.primary-btn{
     display: inline-flex;
     background: white;
     align-items: center;
@@ -80,15 +80,36 @@ a{
     border-radius: var(--radius-card);
 }
 
-img{
- height: 20em;
- width: 10em;
- gap: 32px;
-padding: 42px;
+#profile-img{
+justify-self: center;
+display: flex;
+background-color: #000022;
+}
+
+#profile-img img {
+overflow: hidden;
+height: 420px;
+width: 25em;
 }
 
 #mini-header{
-    font-size: smaller;
+    font-size: 20px;
+}
+
+.buttons{
+    gap: 20px;
+    display: flex;
+}
+
+h1{
+        display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
 
 
