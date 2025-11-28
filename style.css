@@ -1,9 +1,9 @@
 :root {
     --bg: #ffffff;
-    --bg-panel: #7ea4ed;
+    --bg-panel: #31422f;
     --bg-muted: #1b1c27;
     --bg-soft: #151623;
-    --text: #000022;
+    --text: #ffffff;
     --text-muted: #ffffff;
     --accent: #ff9e66;
     --accent-strong: #f76642;
@@ -32,7 +32,7 @@ header{
     align-items: center;
     justify-content: space-between;
     gap: 20em;
-    background-color: #7ea4ed;
+    background-color: var(--bg-panel);
     border: #4c4f60;
     border-radius: 9999px;
     position: sticky;
@@ -53,7 +53,7 @@ nav {
 .logo{
     font-family: 'Space Grotesk', 'Inter', sans-serif;
     font-weight: 600;
-    color: var(--text);
+    color: var(--bg-panel);
 }
 
 a{
@@ -69,6 +69,7 @@ a{
     gap: 8px;
     border-radius: var(--radius-pill);
     padding: 12px 22px;
+    color: var(--bg-panel)
 }
 
 #info{
@@ -83,13 +84,13 @@ a{
 #profile-img{
 justify-self: center;
 display: flex;
-background-color: #000022;
 }
 
 #profile-img img {
 overflow: hidden;
 height: 420px;
 width: 25em;
+border-radius: var(--radius-card);
 }
 
 #mini-header{
@@ -101,16 +102,7 @@ width: 25em;
     display: flex;
 }
 
-h1{
-        display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
+
 
 
 /*
