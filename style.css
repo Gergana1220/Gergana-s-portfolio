@@ -38,7 +38,9 @@ header{
     position: sticky;
     z-index: 10;
     padding: 20px;
-    margin: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 60px;
     backdrop-filter: blur(16px);
 }
 
@@ -70,11 +72,12 @@ a{
     border-radius: var(--radius-pill);
     padding: 12px 22px;
     color: var(--bg-panel)
+    
 }
 
 #info{
     background: var(--bg-panel);
-    margin: 48px;
+    margin: 60px;
     padding: 42px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

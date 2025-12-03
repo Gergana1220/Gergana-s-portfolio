@@ -1,5 +1,9 @@
+:root{
+--bg: #ffffff;
+}
+
 body {
-background-color:#f8f0e3;
+background-color: var(--bg);
 }
 #contact-content {
     color: white;
