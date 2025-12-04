@@ -14,10 +14,6 @@
 }
 
 body {
-background-color: var(--bg);
-}
-
-body {
     margin: 0;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: white;
@@ -61,6 +57,11 @@ a{
     text-decoration: none;
 }
 
+.contact-main{
+    display: flex;
+    justify-content: center;
+}
+
 .primary-btn{
     display: inline-flex;
     background: white;
@@ -76,23 +77,36 @@ a{
 .boxs{
     background-color: var(--bg-panel);
     border-radius: var(--radius-card);
-    margin: 60px;
     padding: 20px;
 }
+
 
 .write1{
   border-radius: var(--radius-card); 
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .write2{
   border-radius: var(--radius-card); 
   padding: 20px;
+display: flex;
+  flex-direction: column;
 }
 
 .write3{
   border-radius: var(--radius-card); 
   padding: 20px;
+    display: flex;
+  flex-direction: column;
+}
+
+.info_for_me{
+    background-color: var(--bg-panel);
+    border-radius: var(--radius-card);
+    margin: 60px;
+    padding: 20px;
 }
 
 
