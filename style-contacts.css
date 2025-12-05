@@ -5,8 +5,6 @@
     --bg-soft: #151623;
     --text: #ffffff;
     --text-muted: #ffffff;
-    --accent: #ff9e66;
-    --accent-strong: #f76642;
     --border: rgba(255, 255, 255, 0.08);
     --radius-pill: 999px;
     --radius-card: 28px;
@@ -77,39 +75,53 @@ a{
     
 }
 
+.secondary-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-pill);
+    border: 2px solid white;
+    padding: 12px 22px;
+}
+
 .boxs{
     background-color: var(--bg-panel);
     border-radius: var(--radius-card);
-    padding: 20px;
-    
+    padding: 30px;
 }
 
 
 .write1{
   border-radius: var(--radius-card); 
-  padding: 20px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 18px
 }
 
 .write2{
   border-radius: var(--radius-card); 
-  padding: 20px;
-display: flex;
+    display: flex;
   flex-direction: column;
+  margin-bottom: 18px
 }
 
 .write3{
   border-radius: var(--radius-card); 
-  padding: 20px;
     display: flex;
   flex-direction: column;
+  margin-bottom: 18px
 }
 
 .info_for_me{
     background-color: var(--bg-panel);
     border-radius: var(--radius-card);
-    padding: 20px;
+    padding: 30px;
+    
+}
+
+.info_for_me ul{
+    list-style-type: none;
+    padding: 0;
 }
 
 #fname{
@@ -130,3 +142,4 @@ display: flex;
 .social-btn{
     gap: 20px;
 }
+

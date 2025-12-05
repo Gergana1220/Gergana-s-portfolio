@@ -5,9 +5,6 @@
     --bg-soft: #151623;
     --text: #ffffff;
     --text-muted: #ffffff;
-    --accent: #ff9e66;
-    --accent-strong: #f76642;
-    --border: rgba(255, 255, 255, 0.08);
     --radius-pill: 999px;
     --radius-card: 28px;
     --shadow-soft: 0 30px 80px #3f4b7d8c;
@@ -77,7 +74,8 @@ a{
 #info{
     background: var(--bg-panel);
     margin: 60px;
-    padding: 42px;
+    padding: 30px;
+    padding-left: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     border-radius: var(--radius-card);
