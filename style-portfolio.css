@@ -1,0 +1,76 @@
+:root{
+    --bg: #ffffff;
+    --bg-panel: #31422f;
+    --bg-muted: #1b1c27;
+    --bg-soft: #151623;
+    --text: #ffffff;
+    --text-muted: #ffffff;
+    --border: rgba(255, 255, 255, 0.08);
+    --radius-pill: 999px;
+    --radius-card: 28px;
+    --shadow-soft: 0 30px 80px #3f4b7d8c;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: white;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20em;
+    background-color: var(--bg-panel);
+    border: #4c4f60;
+    border-radius: 9999px;
+    position: sticky;
+    z-index: 10;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 60px;
+    backdrop-filter: blur(16px);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.logo{
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--bg-panel);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.primary-btn{
+    display: inline-flex;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: var(--radius-pill);
+    padding: 12px 22px;
+    color: var(--bg-panel)
+    
+}
+
+.contact-main{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin: 60px;
+}
