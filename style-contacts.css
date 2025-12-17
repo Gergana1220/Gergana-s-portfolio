@@ -81,7 +81,7 @@ a{
     justify-content: center;
     border-radius: var(--radius-pill);
     border: 2px solid white;
-    padding: 12px 22px;
+    padding: 10px 22px;
 }
 
 .boxs{
@@ -109,7 +109,7 @@ a{
   border-radius: var(--radius-card); 
     display: flex;
   flex-direction: column;
-  margin-bottom: 18px
+  margin-bottom: 30px
 }
 
 .info_for_me{
@@ -139,7 +139,14 @@ a{
     padding: 10px;
 }
 
-.social-btn{
-    gap: 20px;
+.sent-btn{
+    display: inline-flex;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: var(--radius-pill);
+    padding: 7px 170px;
+    color: var(--bg-panel)
+    
 }
-
