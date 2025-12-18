@@ -71,7 +71,7 @@ a{
     
 }
 
-#info{
+.info{
     background: var(--bg-panel);
     margin: 60px;
     padding: 30px;
