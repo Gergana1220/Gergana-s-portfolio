@@ -55,6 +55,10 @@ a{
     text-decoration: none;
 }
 
+.slider a {
+  color: var(--bg-panel);
+}
+
 .primary-btn{
     display: inline-flex;
     background: white;
@@ -81,9 +85,11 @@ a{
 }
 
 .slider {
-  width: 300px;
+  width: 700px;
   text-align: center;
   background-color: #31422f;
+  justify-content: center;
+  align-items: center;
 }
 
 .slides {
@@ -112,7 +118,7 @@ a{
 .slides > div {
   scroll-snap-align: start;
   flex-shrink: 0;
-  width: 300px;
+  width: 700px;
   height: 300px;
   margin-right: 50px;
   border-radius: 10px;
@@ -130,7 +136,7 @@ a{
 
 .author-info {
   background: rgba(0, 0, 0, 0.75);
-  color: white;
+  color: #31422f;
   padding: 0.75rem;
   text-align: center;
   position: absolute;
@@ -149,6 +155,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 .slider > a {
@@ -167,7 +174,7 @@ img {
   top: 1px;
 }
 .slider > a:focus {
-  background: #000;
+  background: #ffffff;
 }
 
 @supports (scroll-snap-type) {
@@ -183,7 +190,7 @@ html, body {
 body {
   align-items: center;
   justify-content: center;
-  font-family: 'Ropa Sans', sans-serif;
+  
 }
 
 .info{
@@ -192,7 +199,7 @@ body {
     margin: 60px;
     padding: 30px;
     padding-left: 40px;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     border-radius: var(--radius-card);    
 }

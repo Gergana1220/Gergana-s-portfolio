@@ -140,13 +140,13 @@ a{
 }
 
 .sent-btn{
-    display: inline-flex;
+    display: flex;
     background: white;
     align-items: center;
     justify-content: center;
     gap: 8px;
     border-radius: var(--radius-pill);
-    padding: 7px 170px;
+    padding: 7px 207px;
     color: var(--bg-panel)
     
 }
