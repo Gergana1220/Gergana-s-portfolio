@@ -1,31 +1,78 @@
-const canvas = document.getElementById("gameCanvas");
+const canvas = document.getElementById("game-canvas");
 const context = canvas.getContext("2d");
 
-const colorPink   = "#FAE3E3";
-const colorGray   = "#575A4B";
-const colorBlack  = "#2A2C24";
-const colorGreen  = "#C1FF9B";
-const colorPurple = "#846B8A";
-
-const playerWidth  = 100;
+const playerWidth = 70;
 const playerHeight = 100;
-const playerColor = colorPurple;
-let x = 400;
-let y = 300;
 
-function update() {
-    x = x + 5;
+let playerX = 400;
+let playerY = 300;
+let playerSpeed = 5;
 
-    context.clearRect(0, 0, 800, 600);
+let buttonADown = false;
+let buttonDDown = false;
+let buttonWDown = false;
+let buttonSDown = false;
 
-    context.fillStyle = playerColor;
-    context.fillRect(
-        x - (playerWidth / 2),
-        y - (playerHeight / 2),
-        playerWidth,
-        playerHeight);
+addEventListener("keydown", (event) => {
+  if (event.key === "a")  
+    buttonADown = true; 
 
-    requestAnimationFrame(update);
+  if (event.key === "d")
+    buttonDDown = true; 
+
+  if (event.key === "w")
+    buttonWDown = true;
+
+  if (event.key === "s")
+    buttonSDown = true;
+});
+
+ addEventListener("keyup", (event) => {
+  if (event.key === "a")
+    buttonADown = false; 
+
+  if (event.key === "d")
+    buttonDDown = false; 
+
+  if (event.key === "w")
+    buttonWDown = false;
+
+  if (event.key === "s")
+    buttonSDown = false;
+});
+
+function update()
+{
+    if (buttonADown)
+        playerX -= playerSpeed; 
+    
+    if (buttonDDown)
+        playerX += playerSpeed; 
+
+    if (buttonWDown)
+        playerY -= playerSpeed; 
+    
+    if (buttonSDown)
+        playerY += playerSpeed;
+    
+    if ((playerX + playerWidth / 2) >= canvas.width)
+    {
+    playerX = canvas.width - playerWidth / 2;
+    }
+
+    if ((playerX + playerWidth / 2) >= canvas.width)
+    {
+    playerX = canvas.width - playerWidth / 2;
+    }
+
+context.clearRect(0, 0, canvas.width, canvas.height);
+context.fillStyle = "#2A2C24";
+context.fillRect(
+    playerX - (playerWidth / 2),
+    playerY - (playerHeight / 2),
+    playerWidth,
+    playerHeight); 
+
+requestAnimationFrame(update);
 }
-
 update();
