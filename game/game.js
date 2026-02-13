@@ -4,6 +4,8 @@ const context = canvas.getContext("2d");
 const playerWidth = 70;
 const playerHeight = 100;
 
+let timeLast = 0;
+
 let playerX = 400;
 let playerY = 300;
 let playerSpeed = 5;
@@ -41,8 +43,11 @@ addEventListener("keydown", (event) => {
     buttonSDown = false;
 });
 
-function update()
+function update(timeCurrent)
 {
+    const deltaTime = timeCurrent - timeLast;
+    console.log(deltaTime);
+
     if (buttonADown)
         playerX -= playerSpeed; 
     
@@ -55,14 +60,24 @@ function update()
     if (buttonSDown)
         playerY += playerSpeed;
     
-    if ((playerX + playerWidth / 2) >= canvas.width)
+    if ((playerX + (playerWidth/2)) >= canvas.width)
     {
-    playerX = canvas.width - playerWidth / 2;
+    playerX = canvas.width - (playerWidth / 2);
     }
 
-    if ((playerX + playerWidth / 2) >= canvas.width)
+    if ((playerX - (playerWidth/2)) < 0)
     {
-    playerX = canvas.width - playerWidth / 2;
+    playerX = playerWidth / 2;
+    }
+
+    if ((playerY + (playerHeight/2)) >= canvas.height)
+    {
+    playerY = canvas.height - playerHeight / 2;
+    }
+
+    if ((playerY - (playerHeight/2))  < 0)
+    {
+    playerY = playerHeight/2;
     }
 
 context.clearRect(0, 0, canvas.width, canvas.height);
@@ -72,6 +87,8 @@ context.fillRect(
     playerY - (playerHeight / 2),
     playerWidth,
     playerHeight); 
+
+    timeLast = timeCurrent; 
 
 requestAnimationFrame(update);
 }
